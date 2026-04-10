@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* 1. RESET Y ESTILO GENERAL */
 * {
     margin: 0;
@@ -159,38 +158,3 @@ footer {
 }
 
 
-=======
-html{
-height: 100%;
-width: 900px;
-}
-
-header{
-background-color: beige;
-border: 2px solid;
-    
-}
-
-ul{
-display: flex;
-gap: 20px;
-list-style-type: none;
-
-}
-
-nav{
-    display: flex;
-
-}
-
-ul a{
-   text-decoration: none;
-   
-}
-
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 20px;
-    margin: 20px;
-}
->>>>>>> cc5d6051baf4b61b7ec26db3521c5c7aff65961b
