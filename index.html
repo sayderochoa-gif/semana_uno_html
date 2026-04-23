@@ -4,72 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayder Jr | Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<link rel="stylesheet" href="styles.css">
-
 <body>
-    
+
     <header>
         <h1>Sayder Junior Carreño Ochoa</h1>
         <nav>
             <ul>
-                <li><a href="#Sobre-mi">Sobre mi</a></li>
+                <li><a href="#Sobre-mi">Sobre mí</a></li>
                 <li><a href="#Proyectos">Proyectos</a></li>
                 <li><a href="#Contacto">Contacto</a></li>
                 <li><a href="mascotas.html" target="_self">Mascotas</a></li>
-
             </ul>
         </nav>
     </header>
 
     <main>
+
+
+        <div id="bienvenida" class="bienvenida-banner">
+            <span id="texto-bienvenida">👋 ¡Bienvenido a mi portafolio!</span>
+            <button id="btn-cerrar-bienvenida" class="btn-cerrar" aria-label="Cerrar mensaje">✕</button>
+        </div>
+
         <section id="Sobre-mi">
-            <h2>Sobre mi</h2>
-            <p>Mi nombre es Sayder Carreño, soy un joven de 21 años originario de la ciudad de Barranquilla, Colombia. 
-                Desde temprana edad, mostré un gran interés por la lectura y la escritura, lo que me llevó a 
+            <h2>Sobre mí</h2>
+
+            <p id="parrafo-bio">Mi nombre es Sayder Carreño, soy un joven de 21 años originario de la ciudad de Barranquilla, Colombia.
+                Desde temprana edad, mostré un gran interés por la lectura y la escritura, lo que me llevó a
                 desarrollar habilidades en los campos de la literatura y la comunicación.
-                Actualmente me encuentro en un proceso de formación en el área de desarrollo de software, y me 
-                caracterizo por el deseo de comprender lo que hago y aprender a estructurar mi código de manera 
+                Actualmente me encuentro en un proceso de formación en el área de desarrollo de software, y me
+                caracterizo por el deseo de comprender lo que hago y aprender a estructurar mi código de manera
                 lógica y práctica.
-                Aunque he cometido errores en el camino, he demostrado constancia en mi aprendizaje y me esfuerzo 
+                Aunque he cometido errores en el camino, he demostrado constancia en mi aprendizaje y me esfuerzo
                 por mejorar cada día.</p>
+            <button id="btn-cambiar-texto" class="btn-secundario">Leer más sobre mí</button>
         </section>
 
-<section id="Proyectos">
-    <h2>Proyectos</h2>
-    <div class="lista-proyectos">
-        <a href="https://github.com/sayderochoa-gif/EstadisticasPartido.git" target="_blank">Aplicación de Estadísticas</a>
-        <a href="https://github.com/sayderochoa-gif/proyect_dragonb.git" target="_blank">Página Web Dragon Ball</a>
-        <a href="https://github.com/sayderochoa-gif/ReportSales.git" target="_blank">Registro de Ventas</a>
-        <a href="https://github.com/sayderochoa-gif/Parking.git" target="_blank">Gestión de Parqueo</a>
-    </div>
-</section>
+        <section id="Proyectos">
+            <h2>Proyectos</h2>
+
+            <button id="btn-toggle-proyectos" class="btn-secundario">Ocultar proyectos</button>
+            <div class="lista-proyectos" id="contenedor-proyectos">
+                <a href="https://github.com/sayderochoa-gif/EstadisticasPartido.git" target="_blank">Aplicación de Estadísticas</a>
+                <a href="https://github.com/sayderochoa-gif/proyect_dragonb.git" target="_blank">Página Web Dragon Ball</a>
+                <a href="https://github.com/sayderochoa-gif/ReportSales.git" target="_blank">Registro de Ventas</a>
+                <a href="https://github.com/sayderochoa-gif/Parking.git" target="_blank">Gestión de Parqueo</a>
+            </div>
+        </section>
 
         <section id="Contacto">
             <h2>Contacto</h2>
-            <p>¿Tienes alguna duda? Enviame un mensaje:</p>
+            <p>¿Tienes alguna duda? Envíame un mensaje:</p>
             <form>
-
-                <div class="fomulario-grup">
-                    <label for="nombre">Nombre:</label><br>
+                <div class="formulario-grup">
+                    <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
-
                 <div class="formulario-grup">
                     <label for="mensaje">Mensaje:</label>
                     <textarea name="mensaje" id="mensaje" rows="4"></textarea>
                 </div>
-                
                 <button type="submit">Enviar</button>
             </form>
-
         </section>
+
     </main>
 
     <footer>
         <p>&copy; 2026 Sayder Junior Carreño Ochoa - Mi Portafolio - Todos los derechos reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
